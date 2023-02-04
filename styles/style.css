@@ -154,6 +154,13 @@ small,
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 550px) {
+  .hero-text {
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+  }
+}
+
 .prayer {
   border: 2px solid var(--primary-5);
   height: 100%;
