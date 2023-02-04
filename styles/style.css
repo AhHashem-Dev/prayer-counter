@@ -134,7 +134,7 @@ small,
 
 .hero {
   height: 100vh;
-  padding-top: 4rem;
+  /* padding-top: 1rem; */
   box-sizing: border-box;
 }
 
