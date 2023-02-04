@@ -238,3 +238,10 @@ window.addEventListener("DOMContentLoaded", function () {
     storageDate[2]
   }`;
 });
+
+window.addEventListener("load", function () {
+  const loaderPage = document.querySelector(".loader-page");
+  setTimeout(function () {
+    loaderPage.classList.add("loader-hidden");
+  }, 1000);
+});

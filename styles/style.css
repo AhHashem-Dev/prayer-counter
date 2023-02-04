@@ -100,6 +100,7 @@ small,
   width: 90%;
   max-width: var(--max-width);
   margin: 0 auto;
+  height: 100%;
 }
 
 .btn {
@@ -158,6 +159,10 @@ small,
   .hero-text {
     margin-bottom: 2rem;
     margin-top: -1rem;
+  }
+  .hero {
+    padding: 0;
+    padding-top: 0.25rem;
   }
 }
 
@@ -288,4 +293,36 @@ small,
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+}
+
+.loader-page {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background: var(--white);
+  transition: var(--transition);
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  height: 15rem;
+  width: 15rem;
+  border-top: 5px solid var(--primary-5);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - calc(15rem / 2));
+  top: calc(50% - calc(15rem / 2));
+  animation-name: spinner;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+.loader-hidden {
+  opacity: 0;
 }
